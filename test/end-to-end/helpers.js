@@ -61,7 +61,7 @@ function getFirefoxExtensionPath()
   const files = fs.readdirSync("../../adblockpluschrome");
   files.forEach(async(name) =>
   {
-    if (/.*\.xpi/.test(name))
+    if (/.*\.zip/.test(name))
     {
       abpXpiFileName = "../../adblockpluschrome/" + name;
     }
